@@ -1,24 +1,13 @@
 # typeorm-issue
 
-## Project setup
-```
-npm install
+## Instructions
+
+```bash
+npm i
+npm run electron:build
+./dist_electron/typeorm-issue-0.1.0.AppImage
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+This should reproduce the error.
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Comment out the typeorm import in background.js and it works fine.

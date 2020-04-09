@@ -3,7 +3,7 @@
 
 import { app, protocol, BrowserWindow } from 'electron';
 
-// import { createConnection } from 'typeorm';
+import { createConnection } from 'typeorm';
 
 const isDevelopment = process.env.NODE_ENV !== 'production';
 
